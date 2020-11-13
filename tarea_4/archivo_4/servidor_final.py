@@ -12,10 +12,10 @@ sock.listen(1)
 
 
 while True:
-    print('Esperando una coneccion')
+    print('Esperando una conexion')
     connection, client_address = sock.accept()  #espera coneccion del cliente
     try:
-        print('coneccion de', client_address)
+        print('conexion de', client_address)
 
         while True:
             data = connection.recv(16)
